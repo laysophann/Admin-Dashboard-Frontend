@@ -57,7 +57,7 @@ export default function Card() {
       </div>
       {/* search box */}
       <div className="w-10/11 h-10 bg-slate-200 mt-6 ml-52 rounded-full flex flex-row justify-end items-center pr-4 shadow-slate-200 shadow-sm">
-      <BiSearch className="w-10 h-10"/>
+      <BiSearch className="w-10 h-10 opacity-50"/>
       </div>
       <Trending></Trending>
       <Recent></Recent>

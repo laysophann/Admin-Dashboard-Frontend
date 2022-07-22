@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import { SidebarData } from "../data";
 
 export default function Sidebar() {
   const [hover1, Sethover1] = useState(true);
+  const [active, setActive] = useState(1);
 
   return (
     <div className="mr-4 p-4 bg-green-100 h-screen w-60  flex flex-col">
@@ -15,8 +17,19 @@ export default function Sidebar() {
       {/* icons and title*/}
       <div className="flex flex-col justify-start ml-3 space-y-10">
         {SidebarData.map((sidebar) => (
-          <div  key={sidebar.id}>
-            <section className={`${hover1? "hover:font-bold hover:rounded hover:cursor-pointer" : " " }  flex space-x-4 items-center`}>
+          <Link key={sidebar.id} to={sidebar.path}>
+            <section
+              className={`${
+                hover1
+                  ? "hover:font-bold hover:rounded hover:cursor-pointer"
+                  : " "
+              } ${
+                active === sidebar.id ? "font-bold" : ""
+              } flex space-x-4 items-center`}
+              onClick={() => {
+                setActive(sidebar.id);
+              }}
+            >
               <ul>
                 <li>
                   <img src={sidebar.image} alt="gallery" className="w-12" />
@@ -26,7 +39,7 @@ export default function Sidebar() {
                 {sidebar.tittle}
               </span>
             </section>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

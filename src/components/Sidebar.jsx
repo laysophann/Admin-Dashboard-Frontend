@@ -7,7 +7,7 @@ export default function Sidebar() {
   const [active, setActive] = useState(1);
 
   return (
-    <div className="mr-4 p-4 bg-green-100 h-screen w-60  flex flex-col">
+    <div className="p-4 bg-green-100 h-screen w-60  flex flex-col">
       {/* logo */}
       <div className="flex flex-row p-5 justify-center items-center">
         <img src="images/logo.png" alt="" className="w-40" />

@@ -184,4 +184,29 @@ export const listData = [
   source : 'kompong Som', 
   expire : '10/03/2023'
 },
+{
+  name : 'Broccoli',
+  img : 'images/broccoli.png',
+  id : 3,
+  price : '1.5$/kg', 
+  source : 'Battambang', 
+  expire : '09/11/2022'
+},
+]
+
+// categories data 
+
+export const categoriesData = [
+  {
+    id : 1,
+    type : 'Vegetable'
+  },
+  {
+    id : 2,
+    type : 'Fruit'
+  },
+  {
+    id : 3,
+    type : 'Meat', 
+  }
 ]

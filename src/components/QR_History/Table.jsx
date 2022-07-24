@@ -30,7 +30,7 @@ export default function Table() {
           {productData.map((product) => (
             <div
               key={product.id}
-              className="flex flex-row mt-5w-full justify-evenly space-x-1 bg-white mt-3 border"
+              className="flex flex-row w-full justify-evenly space-x-1 bg-white mt-3 border"
             >
               <div className="w-full h-10 text-center flex items-center justify-center rounded-tl-lg">
                 <p>{product.name}</p>

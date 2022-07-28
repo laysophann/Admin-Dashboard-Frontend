@@ -28,9 +28,9 @@ export default function Category() {
 
         {categoriesData.map((categories) => (
           <div className="flex flex-row justify-center" key={categories.id}>
-            <div className="w-[90%] bg-white h-10 border-2 flex justify-between items-center px-5 p-7">
+            <div className="w-[90%] bg-white h-10 border flex justify-between items-center p-7">
               <VscAdd />
-              <p>{categories.type}</p>
+              <p className="w-10">{categories.type}</p>
               <FiEdit />
               <RiDeleteBin6Line />
               <AiOutlineDown />

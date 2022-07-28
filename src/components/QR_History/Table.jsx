@@ -13,7 +13,7 @@ export default function Table() {
       </div>
       <div className="w-full flex items-center relative bottom-[79px]">
         <div className="w-full mx-60 relative">
-          <div className="flex flex-row mt-5w-full justify-evenly rounded-md font-medium space-x-1 bg-transparent">
+          <div className="flex flex-row mt-5 w-full justify-evenly rounded-md font-medium space-x-1 bg-transparent">
             <div className="bg-slate-200 w-full h-10 text-center flex items-center justify-center rounded-tl-lg">
               <p>Product</p>
             </div>
@@ -54,7 +54,7 @@ export default function Table() {
         </div>
 
         {/* Export Button */}
-        <div className="absolute top-0 right-32 border px-4 py-1 rounded-lg bg-white">
+        <div className="absolute top-5 right-32 border px-4 py-1 rounded-lg bg-white">
           <button>Export</button>
         </div>
 

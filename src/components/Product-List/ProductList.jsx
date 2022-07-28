@@ -46,33 +46,71 @@ export default function ProductList() {
       {/* card go here*/}
       <div className="flex flex-row space-x-28 flex-wrap bottom-[115px] relative">
         {listData.map((list) => (
-            <div className="w-[15%] h-[30%] border-2 ml-[14%] rounded-md bg-green-200 opacity-90" key={list.id}>
-              <div className="w-full bg-white pb-3 flex flex-row rounded-t-md items-center border-b-2">
-                <p className="font-normal items-center ml-[45%]">{list.name}</p>
-                <MdMoreVert className="ml-[35%]" />
-              </div>
-              <section className="bg-green-200 flex flex-col justify-center items-center">
-                <img src={list.img} alt="" className="w-20 h-20 mt-5" />
-                <div className="flex flex-row space-x-6 mt-4">
-                  <span>
-                    <p>Price</p>
-                    <p>Source</p>
-                    <p>Expire Date</p>
-                  </span>
-                  <span className="mr-28">
-                    <p>{list.price}</p>
-                    <p>{list.source}</p>
-                    <p>{list.expire}</p>
-                  </span>
-                </div>
-                <div className="ml-[85%] mt-5 mb-2">
-                  <RiDeleteBin6Line className="w-6 h-6" />
-                </div>
-              </section>
+          <div
+            className="w-[15%] h-[30%] border-2 ml-[14%] rounded-md bg-green-200 opacity-90"
+            key={list.id}
+          >
+            <div className="w-full bg-white pb-3 flex flex-row rounded-t-md items-center border-b-2">
+              <p className="font-normal items-center ml-[45%]">{list.name}</p>
+              <MdMoreVert className="ml-[20%]" />
             </div>
+            <section className="bg-green-200 flex flex-col justify-center items-center">
+              <img src={list.img} alt="" className="w-20 h-20 mt-5" />
+              <div className="flex flex-row space-x-6 mt-4">
+                <span>
+                  <p>Price</p>
+                  <p>Source</p>
+                  <p>Expire Date</p>
+                </span>
+                <span className="mr-28">
+                  <p>{list.price}</p>
+                  <p>{list.source}</p>
+                  <p>{list.expire}</p>
+                </span>
+              </div>
+              <div className="ml-[85%] mt-5 mb-2">
+                <RiDeleteBin6Line className="w-6 h-6" />
+              </div>
+            </section>
+          </div>
         ))}
       </div>
       {/* end of card */}
+
+      {/* card of col2 */}
+
+      <div className="flex flex-row space-x-28 flex-wrap bottom-[90px] relative">
+        {listData.map((list) => (
+          <div
+            className="w-[15%] h-[30%] border-2 ml-[14%] rounded-md bg-green-200 opacity-90"
+            key={list.id}
+          >
+            <div className="w-full bg-white pb-3 flex flex-row rounded-t-md items-center border-b-2">
+              <p className="font-normal items-center ml-[45%]">{list.name}</p>
+              <MdMoreVert className="ml-[20%]" />
+            </div>
+            <section className="bg-green-200 flex flex-col justify-center items-center">
+              <img src={list.img} alt="" className="w-20 h-20 mt-5" />
+              <div className="flex flex-row space-x-6 mt-4">
+                <span>
+                  <p>Price</p>
+                  <p>Source</p>
+                  <p>Expire Date</p>
+                </span>
+                <span className="mr-28">
+                  <p>{list.price}</p>
+                  <p>{list.source}</p>
+                  <p>{list.expire}</p>
+                </span>
+              </div>
+              <div className="ml-[85%] mt-5 mb-2">
+                <RiDeleteBin6Line className="w-6 h-6" />
+              </div>
+            </section>
+          </div>
+        ))}
+      </div>
+      {/* end of card col2 */}
     </div>
   );
 }

@@ -46,7 +46,7 @@ export default function StoreList() {
       <div className="flex flex-row space-x-10 bottom-[160px] relative">
         {/* card1 go here */}
         <div className="w-[15%] h-[30%] border-2 ml-[14%] rounded-md bg-green-100 opacity-90">
-          <div className="w-full bg-white pb-3 flex flex-row rounded-t-md items-center border-b-2">
+          <div className="w-full bg-white pb-3 flex flex-row rounded-t-md  border-b-2 items-center">
             <p className="font-normal items-center ml-[20%]">LengNavattra</p>
             <MdMoreVert className="ml-[35%]" />
           </div>

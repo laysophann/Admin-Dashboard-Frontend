@@ -190,6 +190,30 @@ export const listData = [
     source: "Battambang",
     expire: "09/11/2022",
   },
+  // {
+  //   name: "Beef",
+  //   img: "images/beef.png",
+  //   id: 4,
+  //   price: "5$/kg",
+  //   source: "Battambang",
+  //   expire: "09/11/2022",
+  // },
+  // {
+  //   name: "Apple",
+  //   img: "images/apple.png",
+  //   id: 5,
+  //   price: "3$/kg",
+  //   source: "Battambang",
+  //   expire: "09/11/2022",
+  // },
+  // {
+  //   name: "Carrot",
+  //   img: "images/carrot.png",
+  //   id: 6,
+  //   price: "1$/kg",
+  //   source: "Battambang",
+  //   expire: "09/11/2022",
+  // },
 ];
 
 // categories data

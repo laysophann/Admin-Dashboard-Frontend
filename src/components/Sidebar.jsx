@@ -3,9 +3,8 @@ import React, { useState } from "react";
 import { SidebarData } from "../data";
 
 export default function Sidebar() {
-  const [hover1, Sethover1] = useState(true);
+  const [hover1, setHover1] = useState(true);
   const [active, setActive] = useState(1);
-
   return (
     <div className="p-4 bg-green-100 h-screen w-60  flex flex-col">
       {/* logo */}
@@ -32,7 +31,7 @@ export default function Sidebar() {
             >
               <ul>
                 <li>
-                  <img src={sidebar.image} alt="gallery" className="w-12" />
+                  <img src={sidebar.image} alt="gallery" className="w-12 sm:w-12 sm:h-12" />
                 </li>
               </ul>
               <span className="title-font text-lg text-gray-500">

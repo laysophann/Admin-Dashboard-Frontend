@@ -1,5 +1,7 @@
 // side bar data
 
+import ExtendedCardVegetable from "./components/Categories/ExtendedCardVegetable";
+
 export const SidebarData = [
   {
     tittle: "Dashboard",
@@ -173,6 +175,7 @@ export const listData = [
     price: "5$/kg",
     source: "kompong Speu",
     expire: "11/02/2022",
+    categ: 'meat',
   },
   {
     name: "Banana",
@@ -181,6 +184,7 @@ export const listData = [
     price: "1$/kg",
     source: "kompong Som",
     expire: "10/03/2023",
+    categ: 'fruit',
   },
   {
     name: "Broccoli",
@@ -189,6 +193,7 @@ export const listData = [
     price: "1.5$/kg",
     source: "Battambang",
     expire: "09/11/2022",
+    categ: 'vegetable',
   },
   // {
   //   name: "Beef",
@@ -216,6 +221,30 @@ export const listData = [
   // },
 ];
 
+export const storeData = [
+  {
+    storeName : 'LengNavattra1',
+    image : 'images/store.png', 
+    id : 1, 
+    location : 'Borey Piphop Tmey3,SangKat Prey Sa,Khan Dangkor, Phnom Penh1', 
+    contact : '086981118'
+  },
+  {
+    storeName : 'LengNavattra2',
+    image : 'images/store.png', 
+    id : 2, 
+    location : 'Borey Piphop Tmey3,SangKat Prey Sa,Khan Dangkor, Phnom Penh2', 
+    contact : '086981118'
+  },
+  {
+    storeName : 'LengNavattra3',
+    image : 'images/store.png', 
+    id : 3, 
+    location : 'Borey Piphop Tmey3,SangKat Prey Sa,Khan Dangkor, Phnom Penh3', 
+    contact : '086981118'
+  },
+]
+
 // categories data
 
 export const categoriesData = [
@@ -232,3 +261,26 @@ export const categoriesData = [
     type: "Meat",
   },
 ];
+
+export const ExtendedCardVegetableData = [
+{
+  image : 'images/potato.png', 
+  title : 'Potato', 
+  id : 1
+},
+{
+  image : 'images/cabbage.png', 
+  title : 'Cabbage', 
+  id : 2
+},
+{
+  image : 'images/ginger.png', 
+  title : 'Ginger', 
+  id : 3
+},
+{
+  image : 'images/broccoli.png', 
+  title : 'Broccoli', 
+  id : 4
+}
+]

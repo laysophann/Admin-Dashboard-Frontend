@@ -1,7 +1,6 @@
 // side bar data
 
 import ExtendedCardVegetable from "./components/Categories/ExtendedCardVegetable";
-
 export const SidebarData = [
   {
     tittle: "Dashboard",
